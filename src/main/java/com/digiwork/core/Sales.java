@@ -7,7 +7,6 @@ import lombok.*;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-@RequiredArgsConstructor
 public class Sales{
 
     private String orderID;
@@ -15,7 +14,14 @@ public class Sales{
     private String city;
     private String state;
     private String type;
-    private double units;
     private double unitCost;
-    private double total;
+    private int unitsSold;
+    private double TotalRevenue;
+    private double TotalCost;
+    private double TotalProfit;
+    private String ItemType;
+    private String SalesChannel;
+    private String OrderPriority;
+    private double UnitSellPrice;
+
 }
